@@ -1,4 +1,4 @@
-MutationGrid LLC (MutationGrid.com whenever Jay unborks his ISP)
+MutationGrid LLC
 
 Global domination through super computers, open source, and bioinformatics.
 
@@ -14,7 +14,10 @@ Table of Contents
 Participants
 ============
 
-Freenode #omaha.dev stesla jhannah dhoss
+Freenode #omaha.dev 
+   stesla  - Erlang, comp sci. genius
+   jhannah - Perl hacker, bioinformatics neophyte
+   dhoss   - Perl minion extraordinaire
 
 
 Source code
