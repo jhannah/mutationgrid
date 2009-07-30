@@ -4,32 +4,32 @@ Global domination through super computers, open source, and bioinformatics.
 
 
 Table of Contents 
-=================
+-----------------
 
-  grid/   - Erlang source code that drives the science
-  www/    - Website contents (MutationGrid.com whenever Jay unborks his ISP)
-  ?
+    grid/   - Erlang source code that drives the science
+    www/    - Website contents (MutationGrid.com whenever Jay unborks his ISP)
+    ?
 
 
 Participants
-============
+------------
 
 Freenode #omaha.dev 
-   stesla  - Erlang, comp sci. genius
-   jhannah - Perl hacker, bioinformatics neophyte
-   dhoss   - Perl minion extraordinaire
+    stesla  - Erlang, comp sci. genius
+    jhannah - Perl hacker, bioinformatics neophyte
+    dhoss   - Perl minion extraordinaire
 
 
 Source code
-===========
+-----------
  
-Main repository in very early stages:
+Main repository:
  
-   http://github.com/jhannah/mutationgrid/
+    http://github.com/jhannah/mutationgrid/
  
 stesla's Erlang plumbing genius which will take over grid/ of the main repo
-soonish.
+soonish:
  
-   http://github.com/stesla/mg/tree/master
+    http://github.com/stesla/mg/tree/master
 
  
