@@ -1,16 +1,16 @@
 Overview
-========
+--------
 
-I'm working on a project which contains a couple million nucleic acids sequences, 
+I have a problem. I have a couple million nucleic acids sequences, 
 each 18 bases long. Each base is 'A', 'C', 'G', or 'T'. 18 bases in a row 
-makes for 69 billion possible sequences. So my actual data (2M) is very 
+makes for 69 billion possible sequences. The actual data (2M) is very 
 sparse compared to the potential list (69B).
 
 I want to eliminate duplicates out of my 2M sequences. But by "duplicate" I 
 don't mean exact match only. I mean any sequence that is one mutation (a 
 single base changes from one letter to another letter) or two mutations distant.
 
-Mutation is quite a problem. When you have 18 bases and mutate 2 of them 
+This is quite the problem. When you have 18 bases and mutate 2 of them 
 that's 2,754 possible mutations (18 \* 3 \* 17 \* 3 ... right?) for each sequence. 
 So to de-dupe my 2M sequences I actually have to do 5.5B searches through 2M 
 sequences (11 quadrillion comparisons). That's a lot, even with good indexes.
@@ -38,9 +38,35 @@ regarding a maximum of 64 sequences each. And if our data is very sparse
 then the actual number is far less.
 
 
+Getting started
+---------------
 
-Node methods
-============
+Here's an Erlang / MutationGrid "Hello World". First, install Erlang (http://erlang.org). 
+Under Ubuntu, you can simple:
+
+    apt-get install erlang
+
+Then, download, compile and run some of our source code:
+
+    $ git clone git://github.com/stesla/mg.git
+    $ cd mg/src
+    $ erl
+    1> c(mg_util).
+    {ok,mg_util}
+    2> mg_util:combinations("ACGT", 1).
+    ["$CGT","A$GT","AC$T","ACG$"]
+    3> mg_util:combinations("ACGT", 2).
+    ["A$$T","$C$T","A$G$","$CG$","AC$$","$$GT"]
+    4> q().
+
+Did that whet your appetite?
+
+
+
+jhannah's hypothetical API
+----------------------
+
+This is what I thought we were going to write. stesla's function names are different.
 
 hmm... how do we bootstrap each node? text file ssh'd to the node?
 
@@ -69,8 +95,8 @@ hmm... how do we bootstrap each node? text file ssh'd to the node?
   Generate a report of all statistics that have been gathered for all of our Sequences.
 
 
-Jay's misc notes
-================
+Random notes, links
+-------------------
 
 * http://erlang.org/download/getting_started-5.4.pdf
 * You need matching ~.erlang.cookie files.
