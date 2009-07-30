@@ -96,8 +96,8 @@ hmm... how do we bootstrap each node? text file ssh'd to the node?
   Generate a report of all statistics that have been gathered for all of our Sequences.
 
 
-Random notes, links
--------------------
+jhannah's random notes
+----------------------
 
 * http://erlang.org/download/getting_started-5.4.pdf
 * You need matching ~.erlang.cookie files.
