@@ -1,10 +1,10 @@
-MutationGrid LLC
+MutationGrid, LLC
 
 Global domination through super computers, open source, and bioinformatics.
 
 
-Table of Contents 
------------------
+Manifest
+--------
 
     grid/   - Erlang source code that drives the science
     www/    - Website contents (MutationGrid.com whenever Jay unborks his ISP)
