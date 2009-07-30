@@ -42,7 +42,7 @@ Getting started
 ---------------
 
 Here's an Erlang / MutationGrid "Hello World". First, install Erlang (http://erlang.org). 
-Under Ubuntu, you can simple:
+Under Ubuntu, you can simply:
 
     apt-get install erlang
 
@@ -64,9 +64,10 @@ Did that whet your appetite?
 
 
 jhannah's hypothetical API
-----------------------
+--------------------------
 
 This is what I thought we were going to write. stesla's function names are different.
+So this might be conceptually useful.
 
 hmm... how do we bootstrap each node? text file ssh'd to the node?
 
